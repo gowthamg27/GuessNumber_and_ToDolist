@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+    padding: 0;  
+    background-color: rgb(200, 153, 236);
+    background: url(https://th.bing.com/th/id/OIP.YFrLxlkLyioRym9XfwugpAAAAA?w=225&h=225&rs=1&pid=ImgDetMain);
+   
+    
+
+}
+div{
+   margin-top: 30px;
+    width: 100%;
+    height: 100vh;
+    border: 2 px solid black;
+ 
+  align-items: center;
+ text-align: center;
+ padding: 10px;
+ 
+
+ 
+}
+a{
+    display: none;
+}
+h1{
+    padding: 10px;
+
+}
+
+input{
+    padding: 15px;
+    width: 250px;
+    border-radius: 15px;
+    
+
+}
+::placeholder{
+    font-size: 15px;
+    text-align: center;
+}
+
+button{
+    margin: 20px;
+    padding: 10px;
+    width: 100px;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(15, 15, 99);
+}
+button:active{
+    background-color: rgb(18, 18, 212);
+}
+#backbtn:hover{
+    background-color: rgb(255, 50, 50);
+}
+p{
+    font-size: 35px;
+    font-weight: bold;
+}
+.score{
+color: rgb(156, 0, 0);
+font-size: 30px;
+font-weight: bold;
+
+
+
+}
+.back{
+   
+margin: 0;
+text-align: left;
+
+}

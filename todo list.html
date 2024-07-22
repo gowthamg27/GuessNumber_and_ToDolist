@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+</head>
+<body>
+    
+<style>
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(202, 202, 202);
+    
+}
+.div{
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    margin: 50px;
+  text-align: center;
+  
+}
+ul{
+    
+   box-sizing: border-box;
+    list-style: none;
+    text-align: left;
+    padding: 20px;
+    margin-left: 100px;
+    
+    font-size: 40px;
+   
+    
+}
+input{
+    padding: 20px;
+    width: 250px;
+    border-radius: 20px;
+    border: 1px solid black;
+
+}
+button{
+    padding: 13px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: rgb(54, 53, 53);
+    color: white;
+    font-size: 15px;
+    margin-left: 20px;
+    cursor: pointer;
+    border: none;
+    
+}
+.btnadd:hover{
+    background-color: rgb(0, 0, 0);
+}
+.btndelete{
+    background-color: rgb(253, 0, 0);
+    border: none;
+}
+.btndelete:hover{
+    background-color: rgb(177, 0, 0);
+}
+::placeholder{
+    text-align: center;
+    font-size: 15px;
+}
+#back1:hover{
+    background-color: rgb(255, 26, 26);
+}
+a{
+    display: none;
+}
+
+
+
+</style>
+
+<div class="div">
+    <a href="game.html" id="back">  </a>
+
+<input id="input" placeholder="Type Your Text....">
+<button onclick="add()" class="btnadd">Add</button>
+<button onclick="back()" id="back1">Back</button>
+<ul id="list-continer">
+    <!-- <li>Hello
+        <button onclick="deleteitem(event)" class="btndelete">Delete</button>
+
+    </li> -->
+</ul>
+
+</div>
+
+<script>
+var ul=document.getElementById("list-continer")
+var input=document.getElementById("input")
+
+function add()
+{
+var listiteam=document.createElement("li")
+listiteam.innerHTML=input.value + " <button onclick='deleteitem(event)' class='btndelete'>Delete</button>"
+ul.append(listiteam)
+}
+
+
+function deleteitem(event)
+{
+
+event.target.parentElement.remove()
+
+
+}
+
+
+function back()
+    {
+        document.getElementById("back").click()
+    
+    }
+</script>
+
+
+
+
+</body>
+</html>
